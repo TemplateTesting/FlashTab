@@ -1,8 +1,8 @@
-function strReverse(i)
+function strReverse(ReverseMe)
 {
 
-  let i = i.split('');
-  let reverseArray = i.reverse();
+  let reverseMe = reverseMe.split('');
+  let reverseArray = reverseMe.reverse();
   let joinArray = reverseArray.join('');
   return joinArray;
 
