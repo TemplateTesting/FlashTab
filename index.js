@@ -1,11 +1,12 @@
+
+
 function strReverse(reverseMe)
 {
-
-  var reverseMe = reverseMe.split('');
+  var reverseMed = prompt("Enter a word to reverse", "default text")
+  var reverseMe = reverseMed.split('');
   var reverseArray = reverseMe.reverse('');
   var joinArray = reverseArray.join('');
-  return joinArray;
+
+  document.getElementById("PageOut").innerHTML = joinArray;
 
 }
-
-console.log(strReverse("hello"));
