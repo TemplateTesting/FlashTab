@@ -1,2 +1,2 @@
 # FlashTab
-To tab the flash of the lash
+Simple function that takes form input and reverses it.
