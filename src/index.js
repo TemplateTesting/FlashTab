@@ -9,7 +9,7 @@ function strReverse(reverseMe)
     if (joinArray === '' )
 
     {
-      console.error('no presse without wordy');
+      console.error('No Wordy No Worky!');
       alert('Please enter a word to reverse');
     }
 
