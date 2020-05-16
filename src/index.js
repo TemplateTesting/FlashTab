@@ -14,7 +14,7 @@ function strReverse(reverseMe)
     }
 
     else {
-      document.getElementById("PageOut").innerHTML = document.getElementById("hellos").value + " reversed is " + joinArray;
+      document.getElementById("PageOut").innerHTML = document.getElementById("hellos").value + " reversed is " + joinArray + ' , and is ' + joinArray.length + ' letters long.';
     }
 
     if (reverseMed === joinArray && joinArray !== '')
