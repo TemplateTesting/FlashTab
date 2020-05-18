@@ -20,7 +20,7 @@ function strReverse(reverseMe)
     if (reverseMed === joinArray && joinArray !== '')
 
     {
-      document.getElementById("PageOut").innerHTML = document.getElementById("hellos").value + " reversed is " + joinArray + ' and it is a matruckin PALINDROME!!!!!!!!';
+      document.getElementById("PageOut").innerHTML = document.getElementById("hellos").value + " reversed is " + joinArray + ' and it is a Palindrome';
     }
 
 }

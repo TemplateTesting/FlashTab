@@ -23,10 +23,24 @@ describe('verifies strReverse reverses input', () => {
     cy.visit('./index.html')
     cy.get('.action-input')
        .type('Hi I am A Hooman')
-       .should('have.value', 'Hi I am A Hooman')
+       .should('have.value', 'I am not a human')
     cy.get('button').click()
     cy.get('h1')
-      .should('contain', 'Hi I am A Hooman reversed is namooh a ma i ih , and is 16 letters long.')
+      .should('contain', 'I am not a human reversed is namuh a ton ma i, and is 16 letters long.')
+
+
+  })
+})
+
+describe('verifies strReverse detects palindrome', () => {
+  it('finds the reverse button', () => {
+    cy.visit('./index.html')
+    cy.get('.action-input')
+       .type('Racecar')
+       .should('have.value', 'Racecar')
+    cy.get('button').click()
+    cy.get('h1')
+      .should('contain', 'Racecar reversed is racecar and it is a Palindrome')
 
 
   })
