@@ -1,6 +1,6 @@
 
 
-function strReverse(reverseMe)
+const Reverser = function strReverse(reverseMe)
 {
   var reverseMed = document.getElementById("hellos").value.toLowerCase()
   var reverseMe = reverseMed.split('');
