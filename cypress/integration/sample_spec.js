@@ -22,7 +22,7 @@ describe('verifies strReverse reverses input', () => {
   it('finds the reverse button', () => {
     cy.visit('./index.html')
     cy.get('.action-input')
-       .type('Hi I am A Hooman')
+       .type('I am not a human')
        .should('have.value', 'I am not a human')
     cy.get('button').click()
     cy.get('h1')
