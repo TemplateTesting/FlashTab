@@ -1,11 +1,13 @@
 
 
-const Reverser = function strReverse(reverseMe)
+const Reverser = {
+
+  strReverse: function()
 {
-  var reverseMed = document.getElementById("hellos").value.toLowerCase()
-  var reverseMe = reverseMed.split('');
-  var reverseArray = reverseMe.reverse();
-  var joinArray = reverseArray.join('');
+  const reverseMed = document.getElementById("hellos").value.toLowerCase()
+  const reverseMe = reverseMed.split('');
+  const reverseArray = reverseMe.reverse();
+  const joinArray = reverseArray.join('');
     if (joinArray === '' )
 
     {
@@ -14,13 +16,14 @@ const Reverser = function strReverse(reverseMe)
     }
 
     else {
-      document.getElementById("PageOut").innerHTML = document.getElementById("hellos").value + " reversed is " + joinArray + ', and is ' + joinArray.length + ' letters long.';
+      document.getElementById("PageOut").innerHTML = document.getElementById("hellos").value + ` reversed is ${joinArray}, and is ${joinArray.length} letters long.`;
     }
 
     if (reverseMed === joinArray && joinArray !== '')
 
     {
-      document.getElementById("PageOut").innerHTML = document.getElementById("hellos").value + " reversed is " + joinArray + ' and it is a Palindrome';
+      document.getElementById("PageOut").innerHTML = document.getElementById("hellos").value + ` reversed is ${joinArray} and it is a Palindrome`;
     }
 
+}
 }
